@@ -12,7 +12,8 @@ This project consists of three main parts:
 
 1. **Frontend** → User interface ([Frontend Deposu](https://github.com/Berkayft/MoreThanYouSeeF))
 2. **Backend** → API and Business Logic ([Backend Deposu](https://github.com/Berkayft/MoreThanYouSeeB))
-3. **Machine Learning** → Artificial intelligence module ([Machine Learning Deposu](https://github.com/kullaniciadi/ml-repo))
+3. **Machine Learning** → Artificial intelligence module ([Machine Learning Deposu](https://github.com/Berkayft/flaskImageRetrivial))
+
 
 ## Setup
 Each sub-module has its own instructions on how to install it.
