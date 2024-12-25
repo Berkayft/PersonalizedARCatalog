@@ -12,7 +12,7 @@ if you are going to use a web server, I show below how I use it in my own nginx,
 ***
     server {
     listen 80;
-    server_name your-domain.com; # Alan adını veya IP adresini yaz
+    server_name your-domain.com;
 
     location / {
         proxy_pass http://127.0.0.1:3000; 
