@@ -7,6 +7,31 @@
 you can access with this url. (Please do not try find bugs :) I know that you can find)
 http://45.143.99.170/
 
+if you are going to use a web server, I show below how I use it in my own nginx, you can change it accordingly
+
+server {
+    listen 80;
+    server_name your-domain.com; # Alan adını veya IP adresini yaz
+
+    location / {
+        proxy_pass http://127.0.0.1:3000; 
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    location /api/catalogs {
+        proxy_pass http://127.0.0.1:5000; 
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
 
 This project consists of three main parts:
 
