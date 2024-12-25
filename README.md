@@ -9,7 +9,8 @@ http://45.143.99.170/
 
 if you are going to use a web server, I show below how I use it in my own nginx, you can change it accordingly
 
-server {
+***
+    server {
     listen 80;
     server_name your-domain.com; # Alan adını veya IP adresini yaz
 
@@ -29,8 +30,8 @@ server {
         proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
+        }
     }
-}
 
 
 This project consists of three main parts:
